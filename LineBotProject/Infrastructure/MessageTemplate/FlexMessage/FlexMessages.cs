@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace LineBotProject.Infrastructure.MessageTemplate.FlexMessages
+namespace LineBotProject.Infrastructure.MessageTemplate.FlexMessage
 {
     /// <summary>
     /// class Flex Messages
@@ -19,22 +19,9 @@ namespace LineBotProject.Infrastructure.MessageTemplate.FlexMessages
       ""contents"": 
 {
   ""type"": ""bubble"",
-  ""header"": {
-                ""type"": ""box"",
-    ""layout"": ""horizontal"",
-    ""contents"": [
-      {
-        ""type"": ""text"",
-        ""text"": ""NEWS DIGEST"",
-        ""weight"": ""bold"",
-        ""color"": ""#aaaaaa"",
-        ""size"": ""sm""
-      }
-    ]
-  },
   ""hero"": {
     ""type"": ""image"",
-    ""url"": ""https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_4_news.png"",
+    ""url"": ""https://www.secretwarehousetw.com/wp-content/uploads/36478203_1767209919992643_5355889132247711744_o.jpg"",
     ""size"": ""full"",
     ""aspectRatio"": ""20:13"",
     ""aspectMode"": ""cover"",
@@ -45,93 +32,144 @@ namespace LineBotProject.Infrastructure.MessageTemplate.FlexMessages
   },
   ""body"": {
     ""type"": ""box"",
-    ""layout"": ""horizontal"",
+    ""layout"": ""vertical"",
     ""spacing"": ""md"",
     ""contents"": [
       {
-        ""type"": ""box"",
-        ""layout"": ""vertical"",
-        ""flex"": 1,
-        ""contents"": [
-          {
-            ""type"": ""image"",
-            ""url"": ""https://scdn.line-apps.com/n/channel_devcenter/img/fx/02_1_news_thumbnail_1.png"",
-            ""aspectMode"": ""cover"",
-            ""aspectRatio"": ""4:3"",
-            ""size"": ""sm"",
-            ""gravity"": ""bottom""
-          },
-          {
-            ""type"": ""image"",
-            ""url"": ""https://scdn.line-apps.com/n/channel_devcenter/img/fx/02_1_news_thumbnail_2.png"",
-            ""aspectMode"": ""cover"",
-            ""aspectRatio"": ""4:3"",
-            ""margin"": ""md"",
-            ""size"": ""sm""
-          }
-        ]
+        ""type"": ""text"",
+        ""text"": ""秘密沙龍"",
+        ""wrap"": true,
+        ""weight"": ""bold"",
+        ""gravity"": ""center"",
+        ""size"": ""xl""
       },
       {
         ""type"": ""box"",
         ""layout"": ""vertical"",
-        ""flex"": 2,
+        ""margin"": ""lg"",
+        ""spacing"": ""sm"",
         ""contents"": [
           {
-            ""type"": ""text"",
-            ""text"": ""7 Things to Know for Today"",
-            ""gravity"": ""top"",
-            ""size"": ""xs"",
-            ""flex"": 1
+            ""type"": ""box"",
+            ""layout"": ""baseline"",
+            ""spacing"": ""sm"",
+            ""contents"": [
+              {
+                ""type"": ""text"",
+                ""text"": ""Date"",
+                ""color"": ""#aaaaaa"",
+                ""size"": ""sm"",
+                ""flex"": 2
+              },
+              {
+                ""type"": ""text"",
+                ""text"": ""Sun. July 29 2018"",
+                ""wrap"": true,
+                ""size"": ""sm"",
+                ""color"": ""#666666"",
+                ""flex"": 4
+              }
+            ]
           },
           {
-            ""type"": ""separator""
+            ""type"": ""box"",
+            ""layout"": ""baseline"",
+            ""spacing"": ""sm"",
+            ""contents"": [
+              {
+                ""type"": ""text"",
+                ""text"": ""Time"",
+                ""color"": ""#aaaaaa"",
+                ""size"": ""sm"",
+                ""flex"": 2
+              },
+              {
+                ""type"": ""text"",
+                ""text"": ""2:00 PM - 4:00 PM"",
+                ""wrap"": true,
+                ""size"": ""sm"",
+                ""color"": ""#666666"",
+                ""flex"": 4
+              }
+            ]
           },
           {
-            ""type"": ""text"",
-            ""text"": ""Hay fever goes wild"",
-            ""gravity"": ""center"",
-            ""size"": ""xs"",
-            ""flex"": 2
+            ""type"": ""box"",
+            ""layout"": ""baseline"",
+            ""spacing"": ""sm"",
+            ""contents"": [
+              {
+                ""type"": ""text"",
+                ""text"": ""Location"",
+                ""color"": ""#aaaaaa"",
+                ""size"": ""sm"",
+                ""flex"": 2
+              },
+              {
+                ""type"": ""text"",
+                ""text"": ""沐樂咖啡忠孝店(近忠孝新生捷運站2號出口7-11旁巷子)"",
+                ""wrap"": true,
+                ""color"": ""#666666"",
+                ""size"": ""sm"",
+                ""flex"": 4
+              }
+            ]
           },
           {
-            ""type"": ""separator""
+            ""type"": ""box"",
+            ""layout"": ""baseline"",
+            ""spacing"": ""sm"",
+            ""contents"": [
+              {
+                ""type"": ""text"",
+                ""text"": ""Note"",
+                ""color"": ""#aaaaaa"",
+                ""size"": ""sm"",
+                ""flex"": 1
+              },
+              {
+                ""type"": ""text"",
+                ""text"": ""建議各位提前15分鐘到場喔!"",
+                ""wrap"": true,
+                ""color"": ""#666666"",
+                ""size"": ""sm"",
+                ""flex"": 4
+              }
+            ]
+          }
+        ]
+      },
+      
+      {
+        ""type"": ""box"",
+        ""layout"": ""vertical"",
+        ""margin"": ""xxl"",
+        ""contents"": [
+          {
+            ""type"": ""spacer""
           },
           {
-            ""type"": ""text"",
-            ""text"": ""LINE Pay Begins Barcode Payment Service"",
-            ""gravity"": ""center"",
-            ""size"": ""xs"",
-            ""flex"": 2
+            ""type"": ""button"",
+            ""action"": {
+              ""type"": ""uri"",
+              ""label"": ""Click Me To Open Map "",
+              ""uri"": ""https://goo.gl/d5PHrJ""
+            }
           },
           {
-            ""type"": ""separator""
-          },
-          {
-            ""type"": ""text"",
-            ""text"": ""LINE Adds LINE Wallet"",
-            ""gravity"": ""bottom"",
-            ""size"": ""xs"",
-            ""flex"": 1
+            ""type"": ""button"",
+            ""action"": {
+              ""type"": ""uri"",
+              ""label"": ""更多訊息"",
+              ""uri"": ""https://goo.gl/jEnRtM""
+            }
           }
         ]
       }
     ]
-  },
-  ""footer"": {
-    ""type"": ""box"",
-    ""layout"": ""horizontal"",
-    ""contents"": [
-      {
-        ""type"": ""button"",
-        ""action"": {
-          ""type"": ""uri"",
-          ""label"": ""More"",
-          ""uri"": ""https://linecorp.com""
-        }
-      }
-    ]
   }
 }
+  
     }
   ]
 ";

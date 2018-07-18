@@ -169,6 +169,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\MessageTemplate\FlexMessage\FlexMessages.cs" />
+    <Compile Include="Infrastructure\MessageTemplate\FlexMessage\ShoppingFlexMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
